@@ -34,10 +34,10 @@ public class AddJobsServlet extends HttpServlet {
 			HttpSession session=req.getSession();
 			if(f)
 			{
-				session.setAttribute("succMsg", "Job Added Sucessfully");
+				session.setAttribute("succMsg", "Вакансію додано успішно");
 				resp.sendRedirect("add_job.jsp");
 			}else {
-				session.setAttribute("succMsg", "Something error in server");
+				session.setAttribute("succMsg", "Щось пішло не так..");
 				resp.sendRedirect("add_job.jsp");
 			}
 			

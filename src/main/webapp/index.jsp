@@ -9,19 +9,19 @@
 <%@include file="all_component/allcss.jsp"%>
 <style type="text/css">
 .back-img {
-	background: url("img/j1.jpg");
+	background: url("img/soldier.png");
 	width: 100%;
-	height: 85vh;
+	height: 110vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 </style>
 </head>
-<body>
+<body style="background-image: url('img/camouflage.png');">
 	<%@include file="all_component/navbar.jsp"%>
 	<div class="container-fluid back-img">
 		<div class="text-center">
-			<h1 class="text-white p-4"> 
+			<h1 class="text-black p-4">
 				<i class="fa fa-book" aria-hidden="true"></i> НЕЗЛАМНІ
 			</h1>
 

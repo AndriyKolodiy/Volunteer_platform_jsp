@@ -12,7 +12,7 @@
 <title>Користувач : Перегляд вакансії</title>
 <%@include file="all_component/allcss.jsp"%>
 </head>
-<body style="background-color: #f0f1f2;">
+<body style="background-image: url('img/camouflage.png');">
 
 	<c:if test="${empty userobj }">
 		<c:redirect url="login.jsp" />

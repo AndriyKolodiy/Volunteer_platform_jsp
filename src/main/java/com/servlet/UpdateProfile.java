@@ -32,10 +32,10 @@ public class UpdateProfile extends HttpServlet {
 			boolean f = dao.updateUser(u);
 			HttpSession session = req.getSession();
 			if (f) {
-				session.setAttribute("succMsg", "Profile Update Sucessfully");
+				session.setAttribute("succMsg", "Профіль успішно оновлнено");
 				resp.sendRedirect("user_view.jsp");
 			} else {
-				session.setAttribute("succMsg", "Something wrong on server");
+				session.setAttribute("succMsg", "Щось пішло не так..");
 				resp.sendRedirect("user_view.jsp");
 			}
 

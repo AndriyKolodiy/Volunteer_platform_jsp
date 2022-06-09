@@ -2,7 +2,7 @@
 <%@page isELIgnored="false"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background:linear-gradient(315deg, #eaf522 0%, #1b31f5 100%)">
 	<a class="navbar-brand" href="index.jsp">НЕЗЛАМНІ</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
@@ -16,18 +16,22 @@
 			<li class="nav-item active"><a class="nav-link" href="index.jsp">На головну
 					<span class="sr-only">(current)</span>
 			</a></li>
+			<li class="nav-item active"><a class="nav-link" href="about.jsp">Про проект
+					<span class="sr-only">(current)</span>
+			</a></li>
 
 			<c:if test="${userobj.name eq 'admin' }">
 				<li class="nav-item"><a class="nav-link" href="add_job.jsp"><i
 						class="fa fa-plus-circle"></i> Додати можливість</a></li>
 
 				<li class="nav-item"><a class="nav-link" href="view_jobs.jsp">
-						<i class="fas fa-eye"></i> Переглянути усі можливості
-				</a></li>
-
+						<i class="fas fa-eye"></i> Переглянути усі можливості</a></li>
 			</c:if>
 
 			<c:if test="${userobj.role eq 'user'  }">
+				<li class="nav-item"><a class="nav-link" href="add_job.jsp"><i
+						class="fa fa-plus-circle"></i> Додати можливість</a></li>
+
 				<li class="nav-item"><a class="nav-link" href="user_view.jsp"><i
 						class="fa fa-eye"></i> Переглянути усі можливості</a></li>
 			</c:if>

@@ -35,10 +35,10 @@ public class UpdateJobServlet extends HttpServlet {
 
 			HttpSession session = req.getSession();
 			if (f) {
-				session.setAttribute("succMsg", "Job Update Sucessfully");
+				session.setAttribute("succMsg", "Вакансію успішно оновлено");
 				resp.sendRedirect("view_jobs.jsp");
 			} else {
-				session.setAttribute("succMsg", "Something error in server");
+				session.setAttribute("succMsg", "Щось пішло не так..");
 				resp.sendRedirect("view_jobs.jsp");
 			}
 

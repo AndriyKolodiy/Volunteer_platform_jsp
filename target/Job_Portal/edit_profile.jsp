@@ -9,7 +9,7 @@
 <%@include file="all_component/allcss.jsp"%>
 
 </head>
-<body style="background-color: #f7f7f7;">
+<body style="background-image: url('img/camouflage.png');">
 	<c:if test="${empty userobj }">
 		<c:redirect url="login.jsp" />
 	</c:if>

@@ -8,7 +8,7 @@
 <title>Адмін: Додати вакансію</title>
 <%@include file="all_component/allcss.jsp"%>
 </head>
-<body style="background-color: #f0f1f2;">
+<body style="background-image: url('img/camouflage.png');">
 	<c:if test="${empty userobj }">
 		<c:redirect url="login.jsp" />
 	</c:if>
@@ -24,7 +24,7 @@
 							<c:remove var="succMsg" />
 						</c:if>
 
-						<h5>Add Jobs</h5>
+						<h5>Add vacancies</h5>
 					</div>
 					<form action="addJob" method="post">
 						<div class="form-group">
@@ -36,10 +36,13 @@
 								<label>Location</label> <select name="location"
 									class="custom-select " id="inlineFormCustomSelectPref">
 									<option selected>Вибрати...</option>
-									<option value="Львів, Україна">Львів, Україна</option>
-									<option value="Київ, Україна">Київ, Україна</option>
-									<option value="Харків, Україна">Харків, Україна</option>
-									<option value="Івано-Франківськ, Україна">Івано-Франківськ, Україна</option>
+									<option value="No location">Без локації(No location)</option>
+									<option value="Lviv, Ukraine">Львів, Україна</option>
+									<option value="Kyiv, Ukraine">Київ, Україна</option>
+									<option value="Kharkiv, Ukraine">Харків, Україна</option>
+									<option value="Mykolaiv, Ukraine">Миколаїв, Україна</option>
+									<option value="Symu, Ukraine">Суми, Україна</option>
+									<option value="Іvano-Frankivsk, Ukraine">Івано-Франківськ, Україна</option>
 									<option value="Warsaw, Poland">Warsaw, Poland</option>
 									<option value="Rzeszow, Poland">Rzeszow, Poland</option>
 									<option value="Przemysl, Poland">Przemysl, Poland</option>
@@ -50,11 +53,18 @@
 								<label>Category</label> <select class="custom-select "
 									id="inlineFormCustomSelectPref" name="category">
 									<option selected>Вибрати...</option>
-									<option value="IT">IT</option>
-									<option value="Devloper">Devloper</option>
-									<option value="Banking">Banking</option>
-									<option value="Engineer">Engineer</option>
-									<option value="Teacher">Teacher</option>
+									<option value="Online volunteering">Онлайн волонтерство(Online volunteering)</option>
+									<option value="Humanitarian headquarters">Гуманітарні штаби(Humanitarian headquarters)</option>
+									<option value="Blood donation">Донорство крові(Blood donation)</option>
+									<option value="Assistance to refugees">Допомога переселенцям(Assistance to refugees)</option>
+									<option value="Helping people with disabilities">Допомога людям з інвалідністю(Helping people with disabilities)</option>
+									<option value="Helping children">Допомога дітям(Helping children)</option>
+									<option value="Helping animals">Допомога тваринам(Helping animals)</option>
+									<option value="Doctor's consultation">Консультація лікаря(Doctor's consultation)</option>
+									<option value="Medicine">Ліки(Medicine)</option>
+									<option value="Food and products">Їжа та продукти(Food and products)</option>
+									<option value="Auto Volunteering">Автоволонтерство(Auto Volunteering)</option>
+									<option value="Psychological help">Психологічна допомога(Psychological help)</option>
 								</select>
 							</div>
 
@@ -71,7 +81,7 @@
 							<textarea required rows="6" cols="" name="desc"
 								class="form-control"></textarea>
 						</div>
-						<button class="btn btn-success">Дата публікації</button>
+						<button class="btn btn-success">Publish</button>
 					</form>
 				</div>
 			</div>

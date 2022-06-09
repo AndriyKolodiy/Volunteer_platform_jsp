@@ -9,10 +9,10 @@
 <html>
 <head>
 
-<title>Admin : View Jobs</title>
+<title>Адміністратор: перегляд вакансій</title>
 <%@include file="all_component/allcss.jsp"%>
 </head>
-<body style="background-color: #f0f1f2;">
+<body style="background-image: url('img/camouflage.png');">
 
 	<c:if test="${empty userobj }">
 		<c:redirect url="login.jsp" />
@@ -26,7 +26,7 @@
 					<div class="alert alert-success" role="alert">${ succMsg}</div>
 					<c:remove var="succMsg" />
 				</c:if>
-				<h5 class="text-center text-primary">Усі Вакансії</h5>
+				<h5 class="text-center text-primary text-black">Усі Вакансії</h5>
 				<%
 				JobDAO dao = new JobDAO(DBConnect.getConn());
 				List<Jobs> list = dao.getAllJobs();

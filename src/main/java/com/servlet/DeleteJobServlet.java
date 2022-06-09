@@ -24,10 +24,10 @@ public class DeleteJobServlet  extends HttpServlet{
 			
 			HttpSession session = req.getSession();
 			if (f) {
-				session.setAttribute("succMsg", "Job Delete Sucessfully");
+				session.setAttribute("succMsg", "Вакансію видалено успішно");
 				resp.sendRedirect("view_jobs.jsp");
 			} else {
-				session.setAttribute("succMsg", "Something error in server");
+				session.setAttribute("succMsg", "Щось пішло не так..");
 				resp.sendRedirect("view_jobs.jsp");
 			}
 			

@@ -20,11 +20,11 @@ public class LogoutServlet extends HttpServlet {
 		
 		if ("u".equals(id)) {
 			session.removeAttribute("userobj");
-			session2.setAttribute("succMsg", "Logout Sucessfully");
+			session2.setAttribute("succMsg", "Вихід..");
 			resp.sendRedirect("login.jsp");
 		} else {
 			session.removeAttribute("auserobj");
-			session2.setAttribute("succMsg", "Logout Sucessfully");
+			session2.setAttribute("succMsg", "Вихід..");
 			resp.sendRedirect("login.jsp");
 		}
 

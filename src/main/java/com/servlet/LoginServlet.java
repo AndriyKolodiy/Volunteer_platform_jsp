@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 					session.setAttribute("userobj", u);
 					resp.sendRedirect("user_view.jsp");
 				} else {
-					session.setAttribute("succMsg", "Invalid Email & Password");
+					session.setAttribute("succMsg", "Неправильно введено Електронну пошту та Пароль");
 					resp.sendRedirect("login.jsp");
 				}
 			}

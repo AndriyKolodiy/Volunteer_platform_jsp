@@ -1,7 +1,5 @@
 .bg-custom {
-	background: #283593 !important;
-
-	/* #8e24aa;  #aa00ff*/
+	background: linear-gradient(315deg, #eaf522 0%, #1b31f5 100%);
 }
 
 .navbar .nav-item .nav-link {

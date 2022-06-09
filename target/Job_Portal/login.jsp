@@ -8,7 +8,7 @@
 <title>Сторінка аутентифікації</title>
 <%@include file="all_component/allcss.jsp"%>
 </head>
-<body style="background-color: #f7f7f7;">
+<body style="background-image: url('img/camouflage.png');">
 
 	<%@include file="all_component/navbar.jsp"%>
 	<div class="continer-fluid">
@@ -18,7 +18,7 @@
 					<div class="card-body">
 						<div class="text-center">
 							<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
-							<h5>Login Page</h5>
+							<h5>Сторінка аутентифікації</h5>
 						</div>
 						<c:if test="${not empty succMsg }">
 							<h4 class="text-center text-danger">${succMsg }</h4>
